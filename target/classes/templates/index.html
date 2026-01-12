@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Portfolio</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        <a th:href="@{/}">Home</a> |
+        <a th:href="@{/about}">About</a> |
+        <a th:href="@{/projects}">Projects</a> |
+        <a th:href="@{/contact}">Contact</a>
+    </nav>
+    <section>
+        <div class="profile-header">
+            <img src="/images/profile.jpeg" alt="Profile Photo" class="profile-img">
+            <div>
+                <h1 style="margin-bottom:0.2em;">Vicky Kumar</h1>
+                <p><strong>Email:</strong> <a href="mailto:vickyk160@gmail.com">vickyk160@gmail.com</a> | <strong>Phone:</strong> +91-7503307527 | Dwarka, New Delhi, India</p>
+                <p>
+                    <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vickykumar-thelonelinux" target="_blank">vickykumar-thelonelinux</a> |
+                    <strong>GitHub:</strong> <a href="https://github.com/thelonelinux" target="_blank">thelonelinux</a>
+                </p>
+            </div>
+        </div>
+        <div class="card-row">
+            <div class="card education-card">
+                <img src="/images/education.png" alt="Education" class="icon-img">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Delhi Technological University (Formerly DCE)</strong> — B.Tech, Information Technology<br>CGPA: 7.8/10<br><em>July 2020 | Delhi, INDIA</em></li>
+                    <li><strong>Vandana International School</strong> — Class 12<br>Board Percentage: 93.4%<br><em>2013-2015 | Dwarka, Delhi, INDIA</em></li>
+                    <li><strong>New Sainik Sr Sec School</strong> — Class 10<br>Board Percentage: 93.0%<br><em>2011-2013 | Dwarka, Delhi, INDIA</em></li>
+                </ul>
+            </div>
+            <div class="card coursework-card">
+                <img src="/images/coursework.png" alt="Coursework" class="icon-img">
+                <h2>Coursework</h2>
+                <ul>
+                    <li>Algorithm - Design and Analysis, Data Structures and Algorithm, Object Oriented Programming</li>
+                    <li>Machine Learning, Computer Networking, Database Management Systems</li>
+                    <li>Software Engineering, Operating Systems</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-row">
+            <div class="card skills-card">
+                <img src="/images/skills.png" alt="Skills" class="icon-img">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Programming:</strong> Java, Spring Boot, Microservices, Spring Framework, J2EE, APIs, C#/.Net Core and Framework, C, C++, JavaScript, HTML/CSS, JSP</li>
+                    <li><strong>Databases:</strong> RDBMS, SQL Server, MySQL</li>
+                    <li><strong>Web & DevOps:</strong> Angular, Web Services, GitHub, Git, Bitbucket, JIRA, Agile, Jenkins, Ansible, Docker, Maven, Kubernetes, Terraform, AWS EC2</li>
+                </ul>
+            </div>
+            <div class="card projects-card">
+                <img src="/images/projects.png" alt="Projects" class="icon-img">
+                <h2>Academic Projects</h2>
+                <ul>
+                    <li><strong>Fake News Detection</strong> (Major Project)<br>Technologies: Machine Learning, Deep Learning (Python)<br>Developed a model to detect fake news with 98% accuracy. Submitted a research paper on the proposed model.</li>
+                    <li><strong>Color Detection using C/C++/OpenCV</strong> (Minor Project)<br>Technologies: C++, OpenCV, Visual Studio</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-row">
+            <div class="card experience-card">
+                <img src="/images/experience.png" alt="Experience" class="icon-img">
+                <h2>Experience</h2>
+                <ul>
+                    <li><strong>Bank of America | Software Engineer</strong><br><em>Jul 2020 - Present | Gurugram, Delhi NCR, India</em>
+                        <ul>
+                            <li><strong>Merchant Services - Wealth Management</strong> (Java, Spring Boot, Microservices) <em>Jul 2022 - Present</em><br>
+                                - Microservice-based architecture for POS systems (hardware/software) for US clients.<br>
+                                - Migrated legacy code to Spring Boot for smoother onboarding.<br>
+                                - Developed RESTful APIs (PSA) and integrated Oracle Database.<br>
+                                - Built IOM (Integrated Order Management) for order fulfillment.
+                            </li>
+                            <li><strong>SSIS Integration</strong> (C#/.NET, SQL Server, MySQL) <em>Jul 2021 - Jul 2022</em><br>
+                                - Developed continuous feed processing using SSIS in .NET Core.
+                            </li>
+                            <li><strong>WFM Mentor-Mentee Website</strong> (Angular)<br>
+                                - Developed a dynamic web page connecting mentors and mentees.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Vayam Tech Pvt Ltd | Software Engineer Intern</strong><br><em>June 2019 – Sept 2019 | New Delhi, India</em><br>
+                        - Developed Android News App using Java, Android Studio, XML, Services, APIs, MySQL.
+                    </li>
+                </ul>
+            </div>
+            <div class="card achievements-card">
+                <img src="/images/achievements.png" alt="Achievements" class="icon-img">
+                <h2>Achievements</h2>
+                <ul>
+                    <li><strong>Bank of America Global Recognition:</strong> Modernization improved processing from 200M to 650M requests/day for Market Data (Quotes, etc.).</li>
+                    <li><strong>BOFA Client Facing Innovation Summit:</strong> Received global recognition award for innovative idea.</li>
+                    <li><strong>CodeChef 5 Star:</strong> Max Rating: 2104, Best Finish (Long Challenge): Global Rank 400</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-row">
+            <div class="card certifications-card">
+                <img src="/images/certifications.png" alt="Certifications" class="icon-img">
+                <h2>Certifications & Training</h2>
+                <ul>
+                    <li>Edureka Angular Certification (2022)</li>
+                    <li>Edureka JAVA/J2EE SOA Certification (2023)</li>
+                    <li>Spring Boot Microservices Certification (2023)</li>
+                    <li>DevOps Master Program (DevOps, AWS, Azure) (2024)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

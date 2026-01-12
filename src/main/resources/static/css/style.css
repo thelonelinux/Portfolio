@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+nav {
+    background: #222;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+section {
+    background: #fff;
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+h1 {
+    color: #2a5298;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2a5298;
+    background: #e0e7ef;
+}
+
+.card-row {
+    display: block;
+    margin-bottom: 1.5em;
+}
+.card {
+    background: linear-gradient(135deg, #e0e7ef 0%, #f4f4f4 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(42,82,152,0.08);
+    padding: 1.5em 1.2em;
+    width: 100%;
+    margin-bottom: 1.5em;
+    min-width: unset;
+    max-width: unset;
+    flex: unset;
+    border-left: 6px solid #2a5298;
+}
+.card h2 {
+    color: #2a5298;
+    margin-top: 0;
+}
+.icon-img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0.5em;
+    display: block;
+}
+.education-card { border-left-color: #4e8cff; }
+.coursework-card { border-left-color: #ffb347; }
+.skills-card { border-left-color: #6dd47e; }
+.projects-card { border-left-color: #ff6f61; }
+.experience-card { border-left-color: #7e57c2; }
+.achievements-card { border-left-color: #fbc02d; }
+.certifications-card { border-left-color: #26c6da; }
+
+@media (max-width: 900px) {
+    section {
+        padding: 1em;
+    }
+    .card {
+        padding: 1em 0.5em;
+    }
+}
+h1 {
+    color: #333;
+}
