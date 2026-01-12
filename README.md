@@ -3,8 +3,8 @@
 This is a personal portfolio website built with Spring Boot.
 
 ## Features
-- Home, About, Projects, and Contact pages
-- Simple contact form (no email sending by default)
+- Home, About, Projects, and connect pages
+- Simple connect form (no email sending by default)
 - Modern, clean design using HTML, CSS, and Thymeleaf
 
 ## Getting Started

@@ -5,11 +5,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import java.util.*;
 
 @Controller
 public class MainController {
+    private final List<String> messages = new ArrayList<>();
+
     @GetMapping("/")
-    public String home() {
+    public String home(Model model) {
+        model.addAttribute("messages", messages);
         return "index";
     }
 
@@ -23,14 +27,21 @@ public class MainController {
         return "projects";
     }
 
-    @GetMapping("/contact")
-    public String contact() {
-        return "contact";
+    @GetMapping("/connect")
+    public String connect() {
+        return "connect";
     }
 
-    @PostMapping("/contact")
-    public String submitContact(@RequestParam String name, @RequestParam String email, @RequestParam String message, Model model) {
+    @GetMapping("/messages")
+    public String messagesPage(Model model) {
+        model.addAttribute("messages", messages);
+        return "messages";
+    }
+
+    @PostMapping("/connect")
+    public String submitconnect(@RequestParam String name, @RequestParam String email, @RequestParam String message, Model model) {
+        messages.add(name + " (" + email + "): " + message);
         model.addAttribute("success", true);
-        return "contact";
+        return "connect";
     }
 }
